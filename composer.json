@@ -10,11 +10,10 @@
     },
 
     "require": {
-        "php": ">=5.6.0",
-        "nette/utils": "^2.3",
-        "nette/database": "^2.3",
-        "nette/reflection": "^2.3",
-        "uestla/yetORM": "~10.0"
+        "php": ">=7.1",
+        "nette/utils": "^3",
+        "nette/database": "^3",        
+        "uestla/yetORM": "^10"
     },
 
     "require-dev": {
