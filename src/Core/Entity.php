@@ -157,7 +157,7 @@ abstract class Entity extends \YetORM\Entity
 
 	foreach ($ref->getEntityProperties() as $name => $property)
         {
-            if(array_search($name, $excludedProperties) === FALSE)
+            if(array_search($name, $excludedProperties) === FALSE && $name != 'modifiedArray')
             {
                 if($property instanceof \YetORM\Reflection\MethodProperty)
                 {
