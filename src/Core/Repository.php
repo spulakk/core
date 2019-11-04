@@ -171,7 +171,7 @@ class Repository extends \YetORM\Repository
     {
         $entity = $this->getByID($id);
 
-        return $this->delete($entity);
+        return $entity ? $this->delete($entity) : false;
     }
     
     /**
