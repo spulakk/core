@@ -163,15 +163,13 @@ class Repository extends \YetORM\Repository
     /**
      * Remove single instance from database by ID
      *
-     * @param $id
+     * @param int $id
      *
      * @return bool
      */
     public function removeByID($id)
     {
-        $entity = $this->getByID($id);
-
-        return $entity ? $this->delete($entity) : false;
+        return (bool) $this->getTable()->wherePrimary($id)->delete();
     }
     
     /**
